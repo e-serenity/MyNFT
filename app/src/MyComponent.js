@@ -1,6 +1,8 @@
 import React from "react";
 import { newContextComponents } from "@drizzle/react-components";
 import logo from "./logo.png";
+import templateNFT1 from "./template-legendary-presale1.gif";
+import didierNFT1 from "./didier-legendary-presale1.gif";
 
 const { AccountData, ContractData, ContractForm } = newContextComponents;
 
@@ -10,12 +12,21 @@ export default ({ drizzle, drizzleState }) => {
     <div className="App">
       <div>
         <img src={logo} alt="drizzle-logo" />
-        <h1>Welcome to MyNFT</h1>
+        <h1>Welcome to EasyNFT (ENFT)</h1>
         <p>
           Easily create your own NFT using our templates !
         </p>
       </div>
 
+      <div className="section">
+        <h2>Presentation</h2>
+        <p>
+          See how you can integrate your pictures to create a unique NFT ;)
+        </p>
+
+      </div>
+      <img src={templateNFT1} alt="template-NFT" />
+       <img src={didierNFT1} alt="didier-NFT" />
       <div className="section">
         <h2>NFT templates</h2>
         <p>
